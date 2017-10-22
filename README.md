@@ -14,6 +14,7 @@ Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframe
 #### Transport:
 When in External Clock mode (Slave), the sequencer wasn't being sent to the first pattern
 step when receiving a reset from another sequencer or clock.
+
 #### Project:
 The lights that indicate which slots are occupied were not working properly in all the cases
 #### Step Mode:
