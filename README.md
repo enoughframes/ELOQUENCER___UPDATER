@@ -1,8 +1,7 @@
-# ELOQUENCER___UPDATER
-Eloquencer updating files for Linux, macOS and Windows
+# Winter Modular Eloquencer V1.0.4 Firmware Update
 
-USE ONLY THIS FIRMWARE UPDATE FOR UNITS FROM THE FIRST BATCH WITH FIRMWARE VERSION 1.0.1
+Includes updater files for Linux, macOS and Windows
 
-IF YOU HAVE A SECOND BATCH UNIT YOU DON'T NEED TO UPDATE YOUR ELOQUENCER (FIRMWARE V.1.0.4)
-
-READ CAREFULLY THE UPDATE PROCEDURE "elo_1_0_4_update_procedure"
+Firmware Version 1.0.4 comes pre-installed on the 2nd batch eloquencer (september 2017).
+You only need to update if you have a 1st batch eloquencer with version 1.0.1 or earlier
+Make sure to read "elo_1_0_4_update_procedure" carefully before updating.
