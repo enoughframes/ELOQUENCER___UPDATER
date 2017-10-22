@@ -10,73 +10,6 @@ Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframe
 
 
 ## Release notes:
-### Solved Bugs:
-#### Transport:
-When in External Clock mode (Slave), the sequencer wasn't being sent to the first pattern
-step when receiving a reset from another sequencer or clock.
-
-#### Project:
-The lights that indicate which slots are occupied were not working properly in all the cases.
-
-#### Step Mode:
-In some cases the tracks were being referred as “track 1, track 2…” and not as “track A,
-track B...” which was confusing. Now all track names use letters instead of numbers in all
-areas of the interface.
-
-When using “Div step mode” the divided track could lose sync after switching between stop
-and play.
-
-The division “/2” was missing in the clock out configuration.
-
-#### Delete track:
-When deleting a track, the corresponding track button was not highlighted during some parts
-of the process..
-#### Master Track:
-Pattern length was incorrectly set to 0 after power on, when the master track was set to “int”
-and pattern length was 64 steps in a saved project.
-#### Scale:
-Diminished scale was not correct
-#### Options:
-The cv gate link information text was not correct
-In some cases the encoder direction was not correctly saved in the global configuration
-#### Track Shift:
-Ties didn´t move when track shifting
-#### Freeze-Revert:
-When doing a revert without a previous freeze the current pattern was deleted.
-#### Tie:
-When the last step of a pattern with a tie was removed, the gate was not going low.
-#### Clock Out:
-The Clock Out Pulse Width did not actually change the Clock Out Pulse Width.
-#### Global:
-When moving from random mode to another function the light on the step edit buttons was
-not turned off.
-
-The function button sometimes got stuck in red or green color.
-
-Going to specific modes with specific button sequences could block step buttons
-When loading a project with the sequencer running some tracks didn't start from the first
-step.
-
-Some not available operations in some modes could take the interface to a dead end. For
-example function+clock and then function+paste.
-
-#### Song Mode:
-Some very specific combinations of part sequences and track lengths made the sequencer
-not start from the beginning.
-
-Loading a project while in song mode could lead the sequencer to get stuck in a pattern.
-The 10th step button was not working in song mode.
-
-#### Live Rec:
-While in free play mode the selected track should be temporarily muted to allow free playing
-over the recorded notes, but the track was not being unmuted after leaving the mode.
-
-#### CV in:
-In some cases the CV IN polarity was not saved with the project.
-
-#### Duplicate:
-When duplicating, the “step_mode_div” was not properly copied.
-
 ### New Features:
 #### Step edit:
 When using the track button to move all the CV values in CV Mode, the relation between
@@ -145,3 +78,70 @@ Current project step button is now highlighted in a different color.
 #### Global:
 Internal / External mode it is now saved as a global variable, it’s not saved with the project
 anymore. Now loading a new project will not change your external/internal clock setting.
+
+### Solved Bugs:
+#### Transport:
+When in External Clock mode (Slave), the sequencer wasn't being sent to the first pattern
+step when receiving a reset from another sequencer or clock.
+
+#### Project:
+The lights that indicate which slots are occupied were not working properly in all the cases.
+
+#### Step Mode:
+In some cases the tracks were being referred as “track 1, track 2…” and not as “track A,
+track B...” which was confusing. Now all track names use letters instead of numbers in all
+areas of the interface.
+
+When using “Div step mode” the divided track could lose sync after switching between stop
+and play.
+
+The division “/2” was missing in the clock out configuration.
+
+#### Delete track:
+When deleting a track, the corresponding track button was not highlighted during some parts
+of the process..
+#### Master Track:
+Pattern length was incorrectly set to 0 after power on, when the master track was set to “int”
+and pattern length was 64 steps in a saved project.
+#### Scale:
+Diminished scale was not correct
+#### Options:
+The cv gate link information text was not correct
+In some cases the encoder direction was not correctly saved in the global configuration
+#### Track Shift:
+Ties didn´t move when track shifting
+#### Freeze-Revert:
+When doing a revert without a previous freeze the current pattern was deleted.
+#### Tie:
+When the last step of a pattern with a tie was removed, the gate was not going low.
+#### Clock Out:
+The Clock Out Pulse Width did not actually change the Clock Out Pulse Width.
+#### Global:
+When moving from random mode to another function the light on the step edit buttons was
+not turned off.
+
+The function button sometimes got stuck in red or green color.
+
+Going to specific modes with specific button sequences could block step buttons
+When loading a project with the sequencer running some tracks didn't start from the first
+step.
+
+Some not available operations in some modes could take the interface to a dead end. For
+example function+clock and then function+paste.
+
+#### Song Mode:
+Some very specific combinations of part sequences and track lengths made the sequencer
+not start from the beginning.
+
+Loading a project while in song mode could lead the sequencer to get stuck in a pattern.
+The 10th step button was not working in song mode.
+
+#### Live Rec:
+While in free play mode the selected track should be temporarily muted to allow free playing
+over the recorded notes, but the track was not being unmuted after leaving the mode.
+
+#### CV in:
+In some cases the CV IN polarity was not saved with the project.
+
+#### Duplicate:
+When duplicating, the “step_mode_div” was not properly copied.
