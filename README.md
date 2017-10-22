@@ -8,7 +8,8 @@ Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/
 
 Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.04_update_procedure.pdfom) carefully before updating.
 
-## Release notes
+
+## Release notes:
 ### Solved Bugs:
 #### Transport:
 When in External Clock mode (Slave), the sequencer wasn't being sent to the first pattern
