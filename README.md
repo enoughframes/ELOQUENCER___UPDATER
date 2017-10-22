@@ -13,7 +13,7 @@ Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframe
 ### New Features:
 #### Step edit:
 When using the track button to move all the CV values in CV Mode, the relation between
-notes is maintained. In other words : you can transpose.
+notes is maintained. In other words, you can transpose.
 
 The relation between values is maintained too for the rest of the step edit modes (Gate, Gate
 length, and Ratcheting).
@@ -23,7 +23,7 @@ Ratcheting) by pressing a group of steps and moving the encoder (Multistep editi
 
 The coarse mode (pushing the encoder) in CV Step edition now jumps one octave at a time.
 
-The font size of the current step note in CV step edition is now bigger to improve readability
+The font size of the current step note in CV step edition is now bigger to improve readability.
 #### Live rec:
 Live recording while song mode is on. You can now record longer than one bar melodies.
 Just arrange a sequence of patterns in a part or in a song and “live record” through them
