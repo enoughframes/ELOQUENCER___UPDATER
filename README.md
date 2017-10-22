@@ -34,9 +34,9 @@ corresponding track button.
 
 #### Shortcuts:
 * You can now access different shortcuts while pressing the FUNC button.
- * FUNC + TRACK: fill in track
- * FUNC + RATCHET + TRACK: Mute track
- * FUNC + ROTATE ENCODER: Change “pattern to play” if song mode is not active, Change
+  * FUNC + TRACK: fill in track
+  * FUNC + RATCHET + TRACK: Mute track
+  * FUNC + ROTATE ENCODER: Change “pattern to play” if song mode is not active, Change
 “pattern to edit” if song mone is active."
 
 #### CV Inputs:
