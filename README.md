@@ -8,14 +8,14 @@ Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/
 
 Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.04_update_procedure.pdfom) carefully before updating.
 
-##Release notes
-##3Solved Bugs:
-###Transport:
+## Release notes
+## 3Solved Bugs:
+### Transport:
 When in External Clock mode (Slave), the sequencer wasn't being sent to the first pattern
 step when receiving a reset from another sequencer or clock.
-###Project:
+### Project:
 The lights that indicate which slots are occupied were not working properly in all the cases
-###Step Mode:
+### Step Mode:
 In some cases the tracks were being referred as “track 1, track 2…” and not as “track A,
 track B...” which was confusing. Now all track names use letters instead of numbers in all
 areas of the interface.
