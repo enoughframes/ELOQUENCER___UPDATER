@@ -6,7 +6,7 @@ Firmware Version 1.0.4 comes pre-installed on the 2nd batch eloquencer (septembe
 
 Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/enoughframes/ELOQUENCER___UPDATER/archive/master.zip)
 
-Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.04_update_procedure.pdfom) carefully before updating.
+Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.04_update_procedure.pdf) carefully before updating.
 
 
 ## Release notes:
