@@ -1,147 +1,93 @@
-# Winter Modular Eloquencer V1.0.4 Firmware Update
+﻿# Winter Modular Eloquencer V1.2.0 Firmware Update
 
 Includes updater files for Linux, macOS and Windows.
 
-Firmware Version 1.0.4 comes pre-installed on the 2nd batch eloquencer (september 2017). You only need to update if you have a 1st batch eloquencer with version 1.0.1 or earlier.
+Firmware Version 1.2.0 comes pre-installed on the 3rd batch eloquencer (March 2018). You only need to update if you have a 1st or 2nd batch eloquencer with version 1.4.0 or earlier. (batch can be identify with the first digit of the serial number beside the power connector).
+
 
 Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/enoughframes/ELOQUENCER___UPDATER/archive/master.zip)
 
-Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.04_update_procedure.pdf) carefully before updating.
+If you have a first batch eloquencer and you have never updated, please refer to updater manual (link below) to do the calibration procedures. If you have a 2nd or 3rd batch unit these procedures are already done.
 
+Make sure to read [elo_1.04_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.04_update_procedure.pdf) carefully before updating.
 
 ## Release notes:
 ### New Features:
-#### Step edit:
-* When using the track button to move all the CV values in CV Mode, the relation between
-notes is maintained. In other words, you can transpose.
+#### Quick pattern chain (aka Devine mode):
+A quick way to create pattern chains. Being in pattern mode, two patterns (steps) can be pressed to create a new chain starting at the first and ending at the second (after the current pattern finishes it will start to play the chain in loop). The chain will be activated when you release the two buttons.
 
-* The relation between values is maintained too for the rest of the step edit modes (Gate, Gate
-length, and Ratcheting).
+The way it jumps between patterns can be changed by holding the two buttons (first and last pattern) and rotating the encoder, The modes are forward, backward, random, coin toss (previous or next) and drunken (previous, current or next).
 
-* You can now edit multiple steps in the Step Edit Modes (CV, Gate, Gate length, and
-Ratcheting) by pressing a group of steps and moving the encoder (Multistep edition).
+If you press a pattern outside the chain you will break the chain and will start to play that new pattern (after the current pattern ends), if you press a pattern inside the chain you will change the pattern to edit, if you long press inside the chain you will break the chain and start to play that pattern (after the current pattern ends).
 
-* The coarse mode (pushing the encoder) in CV Step edition now jumps one octave at a time.
+With the pattern chain created it’s easy to edit patterns, steps can be edited using the step edition modes and the chain section (or pattern) can be changed using FUNC + encoder.
 
-* The font size of the current step note in CV step edition is now bigger to improve readability.
-#### Live rec:
-* Live recording while song mode is on. You can now record longer than one bar melodies.
-Just arrange a sequence of patterns in a part or in a song and “live record” through them
-with the «GATE REC» and «CV KEY REC» functionalities.
 
-* You can now delete the step values in tracks when using «GATE REC», by holding the
-corresponding track button.
+#### Stepped LFO:
+It’s important to note that this is not a linear continuous LFO, this Stepped LFO can change the CV out value every 1/32 pattern.
 
-#### Shortcuts:
-* You can now access different shortcuts while pressing the FUNC button.
-  * FUNC + TRACK: fill in track
-  * FUNC + RATCHET + TRACK: Mute track
-  * FUNC + ROTATE ENCODER: Change “pattern to play” if song mode is not active, Change
-“pattern to edit” if song mone is active."
+Any of the tracks can be configured to work in Stepped LFO mode. When you use the CV out as LFO the gate output is still sending the existing gates in the track so you can still use the gate output independently of the LFO
 
-#### CV Inputs:
-* The CV inputs can now be tuned to work in V/oct. (No additional hardware needed).
-However, these CV inputs were not originally intended for this purpose and some
-unexpected behaviour can happen in some occasions like some notes jumping to the
-contiguous semitone.
+There are 5 different types of Stepped LFO: SAW, RAMP, TRIANGLE, SQUARE and RANDOM. The LFO period can be defined in patterns and steps. Some types have a minimal duration of 2 steps (SAW, RAMP, TRIANGLE), while SQUARE has a minimal duration of 1 step and RANDOM has a minimal duration of 1/2 step. The maximum duration for all types is 32 patterns.
 
-* CV in track assign is now activated at the exact moment you press the track buttons. Before
-this fix you needed to press the encoder before and after selection for them to be activated
-which was not optimal and could be confusing at times.
+The LFO amplitude can be adjusted from 0 to 9V, and we can also set an offset from -9V to 9V. That doesn’t mean that the CV output can go below 0 Volts. Any value below 0 will be limited at 0V, any value above 9V will be limited to 9V.
 
-#### Scale:
-* Up to 8 Scale groups can be set up now in the Scale Menu. We can set up a root note and a
-scale setting in each one of them. Each pattern can be linked to one of those groups in the
-pattern section. This means we can use up to 8 different combinations of scales and root
-notes in a one project or song.
+#### Display:
+It now shows a status screen at power up. It can be removed by pressing any key.
 
-* New Scales: Wholetones, Pentatonic Major and Minor.
-#### Transport:
-* Change: When the sequencer is powered on, it doesn’t automatically start until you press
-the play button.
-#### Aux Output:
-* Can be configured as “HIGH - PLAY , LOW - STOP” to control certain modules that expect
-this behaviour.
-#### Tempo:
-* You can now enter the tempo information via “tap tempo”.
-Tempo menu structure improved.
-#### Ratcheting:
-* Ratcheting divisions are now proportional to the track division step mode.
-#### Song mode:
-* Deleting parts is now possible in “create part” and “play part” modes.
-#### Random mode:
-* New improved menu structure.
 
-* We can now randomize note values within a range (by octaves or semitones).
-#### Project:
-* Current project step button is now highlighted in a different color.
-#### Global:
-* Internal / External mode it is now saved as a global variable, it’s not saved with the project
-anymore. Now loading a new project will not change your external/internal clock setting.
-
-### Solved Bugs:
-#### Transport:
-* When in External Clock mode (Slave), the sequencer wasn't being sent to the first pattern
-step when receiving a reset from another sequencer or clock.
-
-#### Project:
-* The lights that indicate which slots are occupied were not working properly in all the cases.
-
-#### Step Mode:
-* In some cases the tracks were being referred as “track 1, track 2…” and not as “track A,
-track B...” which was confusing. Now all track names use letters instead of numbers in all
-areas of the interface.
-
-* When using “Div step mode” the divided track could lose sync after switching between stop
-and play.
-
-* The division “/2” was missing in the clock out configuration.
-
-#### Delete track:
-* When deleting a track, the corresponding track button was not highlighted during some parts
-of the process..
-#### Master Track:
-* Pattern length was incorrectly set to 0 after power on, when the master track was set to “int”
-and pattern length was 64 steps in a saved project.
-#### Scale:
-* Diminished scale was not correct
 #### Options:
-* The cv gate link information text was not correct
-* In some cases the encoder direction was not correctly saved in the global configuration
-#### Track Shift:
-* Ties didn´t move when track shifting
-#### Freeze-Revert:
-* When doing a revert without a previous freeze the current pattern was deleted.
-#### Tie:
-* When the last step of a pattern with a tie was removed, the gate was not going low.
-#### Clock Out:
-* The Clock Out Pulse Width did not actually change the Clock Out Pulse Width.
-#### Global:
-* When moving from random mode to another function the light on the step edit buttons was
-not turned off.
+Tune interface improved, new tuning adjustments added, menu structure changed.
 
-* The function button sometimes got stuck in red or green color.
+It’s not possible to upload the user tune if it doesn’t exists.
 
-* Going to specific modes with specific button sequences could block step buttons
-When loading a project with the sequencer running some tracks didn't start from the first
-step.
 
-* Some not available operations in some modes could take the interface to a dead end. For
-example function+clock and then function+paste.
+#### Reset input:
+The reset input now accepts a PLAY-STOP signal. A high signal at the reset input is understood as PLAY, a LOW signal at the reset input is understood as STOP. This can be configured in OPTIONS>RST IN.
 
-#### Song Mode:
-* Some very specific combinations of part sequences and track lengths made the sequencer
-not start from the beginning.
-
-* Loading a project while in song mode could lead the sequencer to get stuck in a pattern.
-The 10th step button was not working in song mode.
 
 #### Live Rec:
-* While in free play mode the selected track should be temporarily muted to allow free playing
-over the recorded notes, but the track was not being unmuted after leaving the mode.
+Step buttons (piano notes) can be used to play notes in CV KEY REC or FREE PLAY modes when the sequencer is stopped.
 
-#### CV in:
-* In some cases the CV IN polarity was not saved with the project.
+#### CV IN:
+New CV in assignment to reset the LFOs.
+The track assignment is now shown in the first menu level of CV IN
 
-#### Duplicate:
-* When duplicating, the “step_mode_div” was not properly copied.
+#### Step buttons:
+The step buttons interface has been improved to be instantly refreshed every time there’s a change of pattern, or every time a function button is pressed.
+
+#### Short keys:
+The change pattern short key (FUNC + encoder) has been improved for faster pattern changing.
+The pattern change will now happen just after releasing the function button, without the need to confirm the action by pressing down de encoder a second time.
+
+
+### Bugs:
+#### Live Rec:
+Recorded gates not closing in CV KEY REC mode.
+Track buttons were not lit after changing the track in FREE PLAY and CV KEY REC modes
+
+
+#### Ratcheting:
+Some ratcheting types were duplicated on the ratcheting list
+
+
+#### Transport:
+When in External Clock mode (Slave) without a cable plugged in, and the clock in multiplier activated, the sequencer incorrectly started playing every certain period of time.
+
+When Track Reset Config was deactivated and step mode was DIV/x the first step of a sequence was played twice.
+
+
+#### CV out:
+At slow tempos a CV glitch happened sometimes at the end of the pattern.
+
+
+#### Copy:
+After copying a single track it was not possible to deactivate ratcheting.
+
+
+#### Mute:
+Mute did not work with TIE.
+
+When in External Clock mode (Slave), and no clock signal coming in, it was not possible to change the mutes if the previous tempo was below 60 BPM.
+
+
