@@ -8,7 +8,7 @@ Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/
 
 If you have a first batch eloquencer and you have never updated, please refer to updater manual (link below) to do the calibration procedures. If you have a 2nd or 3rd batch unit these procedures are already done.
 
-Make sure to read [elo_1_2_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1_2_0_update_procedure.pdf) carefully before updating.
+Make sure to read [elo_1_3_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.3.0_update_procedure.pdf) carefully before updating.
 
 ELOQUENCER FW v 1.3.0 Release notes
 ### New EME (Eloquencer MIDI Expansion) functionalities
