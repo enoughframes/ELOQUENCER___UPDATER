@@ -2,7 +2,7 @@
 
 Includes updater files for Linux, macOS and Windows.
 
-Firmware Version 1.3.0 comes pre-installed on the 5th batch eloquencer (June 2019). You only need to update if you have a Firmware version 1.2.0 or earlier. 
+Firmware Version 1.3.1 comes pre-installed on the 5th batch eloquencer (June 2019). You only need to update if you have a Firmware version 1.3.0 or earlier. 
 
 Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/enoughframes/ELOQUENCER___UPDATER/archive/master.zip)
 
