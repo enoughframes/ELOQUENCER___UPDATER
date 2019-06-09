@@ -1,4 +1,4 @@
-# Winter Modular Eloquencer V1.3.1 Firmware Update
+# Winter Modular Eloquencer V1.3.2 Firmware Update
 
 Includes updater files for Linux, macOS and Windows.
 
