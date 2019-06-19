@@ -1,14 +1,22 @@
-# Winter Modular Eloquencer V1.3.2 Firmware Update
+# Winter Modular Eloquencer V1.3.5 Firmware Update
+# Please read carefully the update_procedure
+
 
 Includes updater files for Linux, macOS and Windows.
 
-Firmware Version 1.3.2 comes pre-installed on the 5th batch eloquencer (June 2019). You only need to update if you have a Firmware version 1.3.0 or earlier. 
+Firmware Version 1.3.5 comes pre-installed on the 5th batch eloquencer (June 2019). You only need to update if you have a Firmware version 1.3.2 or earlier. 
 
 Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/enoughframes/ELOQUENCER___UPDATER/archive/master.zip)
 
 If you have a first batch eloquencer and you have never updated, please refer to updater manual (link below) to do the calibration procedures. If you have a 2nd or 3rd batch unit these procedures are already done.
 
 Make sure to read [elo_1_3_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.3.0_update_procedure.pdf) carefully before updating.
+
+ELOQUENCER FW v 1.3.5 Release notes
+- Show current pattern in play while being in LIVE REC MODE
+- Add option to disable TIE recording in LIVE REC mode (in Options)
+- Solved. Incorrect result when combining MIDI OUT CC and LFO
+- Solved. Step CV wasn't able to be changed while being in play in tempo <60
 
 ELOQUENCER FW v 1.3.2 Release notes
 - Incorrect reading of long pulse external clocks (Tempo : EXT)
