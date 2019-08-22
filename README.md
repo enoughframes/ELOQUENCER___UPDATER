@@ -1,16 +1,25 @@
-# Winter Modular Eloquencer V1.3.5 Firmware Update
+# Winter Modular Eloquencer V1.3.8 Firmware Update
 # Please read carefully the update_procedure
 
 
 Includes updater files for Linux, macOS and Windows.
 
-Firmware Version 1.3.5 comes pre-installed on the 5th batch eloquencer (June 2019). You only need to update if you have a Firmware version 1.3.2 or earlier. 
+Firmware Version 1.3.8 comes pre-installed on the 5th batch eloquencer (September 2019). You only need to update if you have a Firmware version 1.3.5 or earlier. 
 
 Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/enoughframes/ELOQUENCER___UPDATER/archive/master.zip)
 
 If you have a first batch eloquencer and you have never updated, please refer to updater manual (link below) to do the calibration procedures. If you have a 2nd or 3rd batch unit these procedures are already done.
 
 Make sure to read [elo_1_3_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.3.0_update_procedure.pdf) carefully before updating.
+
+ELOQUENCER FW v 1.3.8 Release notes
+- THIS VERSION MUST BE USED IF USING EME EXPANSION FROM BATCH 2 or HIGHER (serial number starting at 2)
+- Add new 'pattern reset' configuration. Allows to reset the pattern only the first time it is played (coming from another pattern)
+- Solved. User scales from 2 to 8 can't be chosen using a MIDI interface (CH1 CC22) 
+- The 'CV in' reading process has been modified to improve the CV in tracking.
+- Improve tha pattern chain start.
+- Duplicate and copy paste will now copy the scale group
+- Trk length display description added.
 
 ELOQUENCER FW v 1.3.5 Release notes
 - Show current pattern in play while being in LIVE REC MODE
