@@ -8,5 +8,5 @@ Download the updater here: [ELOQUENCER___UPDATER-master.zip](https://github.com/
 
 If you have a first batch eloquencer and you have never updated, please refer to updater manual (link below) to do the calibration procedures. If you have a 2nd batch or above unit these procedures are already done.
 
-Make sure to read [elo_1_3_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/elo_1.3.0_update_procedure.pdf) carefully before updating.
+Make sure to read [elo_1_4_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/Eloquencer_update_procedure_1_4_0.pdf) carefully before updating.
 
