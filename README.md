@@ -14,9 +14,7 @@ Make sure to read [elo_1_4_0_update_procedure.pdf](https://github.com/enoughfram
 
 To get notified about new firmware releases:
 
-1. **Watch this repository**: Click the "Watch" button at the top of this page and select "Custom" → check "Releases" to receive notifications when new firmware versions are released.
+1. **Watch this repository**: Click the "Watch" button at the top of this page and select "Custom" → check "Releases" to receive email notifications when new firmware versions are released.
 
-2. **Subscribe to releases**: You can also visit the [Releases page](https://github.com/enoughframes/ELOQUENCER___UPDATER/releases) and click "Watch" → "Custom" → "Releases only" to get email notifications for new releases.
-
-3. **Check manually**: Visit this repository periodically to check for updates in the Releases section.
+2. **Check manually**: Visit the [Releases page](https://github.com/enoughframes/ELOQUENCER___UPDATER/releases) periodically to check for new updates.
 
