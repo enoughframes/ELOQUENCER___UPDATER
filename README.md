@@ -10,3 +10,11 @@ If you have a first batch eloquencer and you have never updated, please refer to
 
 Make sure to read [elo_1_4_0_update_procedure.pdf](https://github.com/enoughframes/ELOQUENCER___UPDATER/blob/master/Eloquencer_update_procedure_1_4_0.pdf) carefully before updating.
 
+## How to Subscribe for Updates
+
+To get notified about new firmware releases:
+
+1. **Watch this repository**: Click the "Watch" button at the top of this page and select "Custom" → check "Releases" to receive email notifications when new firmware versions are released.
+
+2. **Check manually**: Visit the [Releases page](https://github.com/enoughframes/ELOQUENCER___UPDATER/releases) periodically to check for new updates.
+
